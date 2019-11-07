@@ -27,31 +27,11 @@ function validateEmailNoRegex() {
   return true;
 }
 
-function validateUsername() {
-  var username = document.getElementById("username").value;
-  var c = username.substring(0,1);
-  var len = username.length;
+function validateDescription() {
+  var desc = document.getElementById("description").value;
 
-  if ((len < 8 || len > 24)
-  || (username.indexOf(" ",0) != -1)
-  || ((c >= '0')&&(c <= '9'))){
-      alert("Please enter a valid username.");
-
-      return false;
-    }
-
-    return true;
-}
-
-function validatePassword() {
-  var password = document.getElementById("password").value;
-  var c = password.substring(0,1);
-  var len = password.length;
-
-  if ((len < 8 || len > 24)
-  || (password.indexOf(" ",0) != -1)
-  || ((c >= '0')&&(c <= '9'))){
-    alert("Please enter a valid password.");
+  if (desc == ''){
+    alert("Empty Description");
 
     return false;
   }
@@ -59,16 +39,27 @@ function validatePassword() {
   return true;
 }
 
+function validateFile() {
+  var avatarImage = document.getElementById("avatarImage").value;
+
+  if (avatarImage == ''){
+    alert("Empty File");
+
+    return false;
+  }
+
+  return true;
+}
 function validateForm() {
   if (!validateEmail()) {
     return false;
   }
 
-  if (!validateUsername()) {
+  if (!validateDescription()) {
     return false;
   }
 
-  if (!validatePassword()) {
+  if (!validateFile())) {
     return false;
   }
 

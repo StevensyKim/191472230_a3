@@ -12,34 +12,42 @@
   <div class='page'>
     <div class='section header'>
       <img src="/img/logo-color.png">
-    </div>
-    <br>
+    </div><br>
     <div class='section attribute-center'>
       <br><h1>Get started with your account</h1>
     </div>
     <div class='section content'>
-      <p>Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform.</p>
-      <!--This is the form -->
-    </div>
-    <div class='section content attribute-left'>
-      <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register" method="post">
-        <input type="hidden" name="191472230" id="191472230" value="1111">
+      <div class='attribute-left'>
+        <p>Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform.</p>
+        <!--This is the form -->
+        <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register_with_image" enctype="multipart/form-data" method="post">
+          <input type="hidden" name="191472230" id="191472230" value="1111">
 
-        <p class='attribute-bold'>Email</p>
-        <input type="text"  name="email" id="email" placeholder="Your Email" ><br>
+          <p class='attribute-bold'>Email</p>
+          <input type="text"  name="email" id="email" placeholder="Your Email" class='full'><br>
 
-        <p class='attribute-bold'>Country<br></p>
-        <input type="text" name="username" id="username" placeholder="Your Name"><br>
+          <p class='attribute-bold'>Country<br></p>
+          <select name="country">
+            <option value="Canada">Canada</option>
+            <option value="United States">United States</option>
+          </select>
 
-        <p class='attribute-bold'>Description<br></p>
-        <input type="password" name="password" id="password" placeholder="Description"><br>
+          <p class='attribute-bold'>Description<br></p>
+          <textarea rows="5" cols="30" name="description">
+            Fill in a Description
+          </textarea>
 
-        <p class='attribute-bold'>Image Upload<br></p>
-        <input type="file" name="file" id="file" placeholder="Upload Image"><br>
-
-        <input type="submit" name="submit" id="signup" class="" value="Register">
-
-      </form>
+          <p class='attribute-bold'>Image Upload<br></p>
+          <input type="file" name="avatarImage" id="avatarImage" placeholder="Upload Image"><br>
+          <div>
+            <input type="submit" name="submit" id="signup" class="" value="Get Started">
+            <p>By clicking the &quot;Get Started!&quot; button, you are creating a Mailchimp account, and you agree to Mailchimp's
+              <a href="http://mailchimp.com/legal/terms/" target="_blank" rel="noopener noreferrer">Terms of Use</a> and
+              <a href="http://mailchimp.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+            </p>
+          </div>
+        </form>
+      </div>
     </div>
     <footer class='attribute3'>
       <p class='attribute3'>&copy;2019 All Rights Reserved. FakeChimp&reg; is a registered trademark of WLUCP202 Class.</p>
