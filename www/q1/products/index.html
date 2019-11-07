@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!--
+  /*
+  * This is the key to an adaptive website.
+  *
+  * <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  *
+  * Without this meta tag, the page doesn't scale properly and it uses the default desktop ratio.
+  *
+  */-->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+  <title>Sweet Tooth Gourmet Bakery</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/cart.js" async></script>
+
+  <!-- YOU MUST MODIFY THIS VALUE TO POINT TO YOUR ACTUAL CHECKOUT PAGE -->
+  <script>localStorage.checkoutURL = '../checkout.html';</script>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='../css/styles_layout.css' />
+
+</head>
+
+<body>
+  <div class='page'>
+    <!-- Section for Navbar -->
+    <div class='section menu' style="letter-spacing:4px;">
+      <a href="../index.html" class="w3-bar-item w3-button">
+        <img src="../favicon.png" alt="Cupcake Main" height="20px">
+        <img src="../img/title_wordart.png" alt="Wordart" height="15px">
+        <img src="../favicon.png" alt="Cupcake Main" height="20px">
+      </a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="/products/index.html" class="w3-bar-item w3-button">Menu</a>
+      </div>
+    </div>
+    <!--makes main image -->
+    <div class='section content'>
+      <div class='section header'>
+        <img src="/img/company_name.png" alt="Company Name" height="50px">
+      </div>
+    </div>
+    <!-- Donut 1 -->
+    <div class='section content2'>
+      <div class="w3-row w3-padding-64">
+        <div class="w3-col m6 w3-padding-large">
+          <img src="/img/toasted_marshmellow.png" class="w3-image w3-opacity-min" alt="Toasted Marshmellow" width="600" height="750">
+        </div>
+
+        <div class="w3-col m6 w3-padding-large">
+          <h5 class="w3-center">Toasted Marshmellow</h5>
+          <p class="w3-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="/products/toasted_marshmellow.html" class="w3-bar-item w3-button">View More</a>
+          <form action="/action_page.php" target="_blank">
+            <p><button class="w3-button w3-light-grey w3-section" type="button"
+              onclick="clientAddItemToCart({prodName: 'Toasted Marshmellow Donut', prodDesc: 'Melted marshmellow', prodPrice: '25.00', prodQty: '1'});">ADD TO CART</button></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Donut 2 -->
+      <div class='section content2'>
+        <div class="w3-row w3-padding-64">
+          <div class="w3-col m6 w3-padding-large">
+            <h5 class="w3-center">Custard Filling</h5>
+            <p class="w3-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="/products/custard_filling.html" class="w3-bar-item w3-button">View More</a>
+            <form action="/action_page.php" target="_blank">
+              <p><button class="w3-button w3-light-grey w3-section" type="button"
+                onclick="clientAddItemToCart({prodName: 'Custard Filling Donut', prodDesc: 'Melted marshmellow', prodPrice: '25.00', prodQty: '1'});">ADD TO CART</button></p>
+              </form>
+            </div>
+            <div class="w3-col m6 w3-padding-large">
+              <img src="/img/custard_filling.png" class="w3-image w3-opacity-min" alt="Custard Filling" width="600" height="750">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Commented out!
+        <div class='section feature-1'>
+        <p>Feature 1</p>
+        <img src="/img/about_cake.jpg" class="w3-opacity-min" alt="Table Setting" max-height:"500px" height="300px">
+      </div>
+
+      <div class='section feature-2'>
+      <p>Feature 2</p><br>
+      <p>next line</p>
+      <h1 class="w3-center">About Catering</h1><br>
+      <h5 class="w3-center">Tradition since 1889</h5>
+      <p class="w3-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <form action="/action_page.php" target="_blank">
+      <p><button class="w3-button w3-light-grey w3-section w3-center" type="button" >Shop Now</button></p>
+    </form>
+  </div>
+-->
+
+</div>
+</body>
+<!-- Footer -->
+<footer class="allign-bottom w3-center">
+  <small><i> Copyright &copy; 2019 Kimx7223</i></small>
+</footer>
+
+</html>

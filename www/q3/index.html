@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>FakeChimp's Registration Form</title>
+  <script src="js/app.js" async></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class='page'>
+    <div class='section header'>
+      <img src="/img/logo-color.png">
+    </div>
+    <br>
+    <div class='section attribute-center'>
+      <br><h1>Get started with your account</h1>
+    </div>
+    <div class='section content'>
+      <p>Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform.</p>
+      <!--This is the form -->
+    </div>
+    <div class='section content attribute-left'>
+      <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register" method="post">
+        <input type="hidden" name="191472230" id="191472230" value="1111">
+
+        <p class='attribute-bold'>Email</p>
+        <input type="text"  name="email" id="email" placeholder="Your Email" ><br>
+
+        <p class='attribute-bold'>Country<br></p>
+        <input type="text" name="username" id="username" placeholder="Your Name"><br>
+
+        <p class='attribute-bold'>Description<br></p>
+        <input type="password" name="password" id="password" placeholder="Description"><br>
+
+        <p class='attribute-bold'>Image Upload<br></p>
+        <input type="file" name="file" id="file" placeholder="Upload Image"><br>
+
+        <input type="submit" name="submit" id="signup" class="" value="Register">
+
+      </form>
+    </div>
+    <footer class='attribute3'>
+      <p class='attribute3'>&copy;2019 All Rights Reserved. FakeChimp&reg; is a registered trademark of WLUCP202 Class.</p>
+    </footer>
+  </body>
+  </html>
