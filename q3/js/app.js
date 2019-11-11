@@ -38,7 +38,17 @@ function validateDescription() {
 
   return true;
 }
+function validateCountry() {
+  var country = document.getElementById("country").value;
 
+  if (country == ''){
+    alert("Empty File");
+
+    return false;
+  }
+
+  return true;
+}
 function validateFile() {
   var avatarImage = document.getElementById("avatarImage").value;
 
@@ -51,11 +61,15 @@ function validateFile() {
   return true;
 }
 function validateForm() {
+  return true;
   if (!validateEmail()) {
     return false;
   }
 
   if (!validateDescription()) {
+    return false;
+  }
+  if (!validateCountry()) {
     return false;
   }
 

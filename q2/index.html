@@ -6,13 +6,14 @@
   <script src="js/app.js" async></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <div class='page'>
     <div class='section header'>
       <img src="/img/logo-color.png">
-    </div><br>
+    </div>
+    <br>
     <div class='section attribute-center'>
       <br><h1>Get started with your account</h1>
     </div>
@@ -20,25 +21,15 @@
       <div class='attribute-left'>
         <p>Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform.</p>
         <!--This is the form -->
-        <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register_with_image" enctype="multipart/form-data" method="post">
-          <input type="hidden" name="191472230" id="191472230" value="1111">
-
+        <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register" method="post">
+          <input type="hidden" name="student_id" id="student_id" value="191472230">
           <p class='attribute-bold'>Email</p>
-          <input type="text"  name="email" id="email" placeholder="Your Email" class='full'><br>
+          <input type="text"  name="email" id="email" placeholder="Your Email" class='full' ><br>
+          <p class='attribute-bold'>Username<br></p>
+          <input type="text" name="username" id="username" placeholder="Your Name"><br>
 
-          <p class='attribute-bold'>Country<br></p>
-          <select name="country">
-            <option value="Canada">Canada</option>
-            <option value="United States">United States</option>
-          </select>
-
-          <p class='attribute-bold'>Description<br></p>
-          <textarea rows="5" cols="30" name="description">
-            Fill in a Description
-          </textarea>
-
-          <p class='attribute-bold'>Image Upload<br></p>
-          <input type="file" name="avatarImage" id="avatarImage" placeholder="Upload Image"><br>
+          <p>Password <a href="#" style="color: red" onclick="alert('Eye clicked.')"><i class="fa fa-eye" aria-hidden="true"></i> Show</a><br></p>
+          <input type="password" name="password" id="password" placeholder="Password"><br>
           <div>
             <input type="submit" name="submit" id="signup" class="" value="Get Started">
             <p>By clicking the &quot;Get Started!&quot; button, you are creating a Mailchimp account, and you agree to Mailchimp's
